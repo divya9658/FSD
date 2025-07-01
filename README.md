@@ -1,0 +1,10 @@
+# Flip Card using 3D transformations...
+Sounds really good right!! Let's dive like how I make it work!!!
+Check the output below....
+
+https://github.com/user-attachments/assets/bcc05123-fe11-42d8-b21d-880f5ffa496b
+
+Here I mainly used the different types of properties in CSS.
+- rotateY() function plays a vital role here, because it needs to rotate vertically for 180deg on hover on parent class.
+- Making the parent position as relative and child positions as absolute will make them align one after another.
+- Definitely, without transform-style as preserve-3d, we can't make the animations in 3D perspective.
