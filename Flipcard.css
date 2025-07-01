@@ -1,0 +1,61 @@
+.grandparent{
+    perspective: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s linear;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.263);
+}
+.parent:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 10px;
+    background-image: url(./m2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.front p{
+    width: 95%;
+    height: auto;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px white;
+    font-weight: bold;
+    padding: 8px;
+    font-family:'Times New Roman', Times, serif;
+}
+.back{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: rotateY(180deg);
+    font-size: 16px;
+    background-color: white;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.back h2, p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.back p{
+    padding: 15px;
+}
