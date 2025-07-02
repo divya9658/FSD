@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+h1{
+    margin-top: -300px;
+}
+.parent{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: rubix 5s infinite linear;
+    transform-style: preserve-3d;
+}
+@keyframes rubix{
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+.parent div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 1px solid rgb(30, 21, 21);
+    border-radius: 5px;
+}
+.left{
+    background-color: red;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: rotateY(90deg) translateZ(100px);
+}
+.right{
+    position: absolute;
+    background-color: rgb(251, 251, 8);
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: rotateY(90deg) translateZ(-100px);
+}
+.top{
+    background-color: rgb(4, 255, 0);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: rotateX(90deg) translateZ(100px);
+}
+.bottom{
+    position: absolute;
+    background-color: rgb(32, 8, 251);
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: rotateX(90deg) translateZ(-100px);
+}
+.front{
+    background-color: orange;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform:translateZ(100px);
+}
+.back{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform:translateZ(-100px);
+}
