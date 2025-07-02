@@ -8,3 +8,9 @@ Here I mainly used the different types of properties in CSS.
 - rotateY() function plays a vital role here, because it needs to rotate vertically for 180deg on hover on parent class.
 - Making the parent position as relative and child positions as absolute will make them align one after another.
 - Definitely, without transform-style as preserve-3d, we can't make the animations in 3D perspective.
+
+# Rubik's Cube
+
+
+https://github.com/user-attachments/assets/5e3d5de3-938e-4a5e-b100-d07b74fa627d
+
